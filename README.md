@@ -16,20 +16,27 @@
 DHT 11:
 
 "-" - GND
+
 S - D1
+
 V - 3.3
 
 BME280:
 
 SDA - D3
+
 SCL - D4
+
 G - G
+
 V - 3.3
 
 GUVA-S12SD:
 
 SIO - AO
+
 GND - G
+
 VCC - 3.3
 
 ## Прошивка
