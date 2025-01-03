@@ -57,7 +57,8 @@ function data_out()
     pack['id'] = uid 
     pack['bme'] = {['temp'] = T,['press'] = P,['alt'] = curAlt}    
     pack['dht'] = {['temp'] = TB,['humi'] = TH} 
-    pack['uf'] = UF
+    pack['solar'] = {['uf'] = UF}
+    pack['uf'] = UF -- backport
     return encoder.toBase64(sjson.encode(pack))
 end
 
