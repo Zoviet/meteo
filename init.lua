@@ -81,8 +81,7 @@ function on_connect()
     -- Generate UID from MAC address
     uid = string.gsub(wifi.ap.getmac(),':','')
     print("Connected to wifi as: " .. wifi.sta.getip())
-    ssid,password,bssid_set,bssid = wifi.sta.getconfig()
-    sensor_start()
+    ssid,password,bssid_set,bssid = wifi.sta.getconfig()  
     print(
         "\nCurrent Station configuration:"
         .."\nSSID : "..ssid
