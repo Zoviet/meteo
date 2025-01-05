@@ -34,6 +34,8 @@ if read -p "Для начала прошивки нажмите ENTER: " start; 
 	fi	
 fi
 
+cd ../
+
 if read -p "Для начала заливки скетча нажмите ENTER: " start; then
 	echo 'Заливаем Lua скетч:'
 	python2 luatool.py --port /dev/ttyUSB$port --src init.lua --dest init.lua --verbose --restart --baud 115200 
