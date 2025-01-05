@@ -12,7 +12,7 @@ if read -p "Подключите плату к USB и нажмите ENTER: " st
 fi
 
 if read -p "Для начала прошивки нажмите ENTER: " start; then
-	cd ../Firmware
+	cd Firmware
 	firmware=($(find -name '*.bin'))
 	if [[ $firmware == *"nodemcu"* ]]; then
 		printf '\033[92mНайдена прошивка: '$firmware'\033[0m\n\n'
